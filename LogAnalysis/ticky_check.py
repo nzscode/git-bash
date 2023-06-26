@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-import re
 import operator
+import re
 import csv
-from operator import itemgetter
 
-per_user = {
-    "test_user": [0, 0],
-}
-error_d = {
-    "test issue": 0,
-}
+per_user = {}
+error_d = {}
 file = "x_syslog.log"
 reg = r": ([\w]*) ([\w ']*)\[?(#[\d]*)?\]? \(([\w.]*)\)"
 
@@ -23,7 +18,6 @@ with open(file, 'r') as f:
         if reg_result is not None:
             user_name = reg_result[4]
             if user_name not in per_user.keys():
-                # per_user[user_name] = [["INFO", 0], ["ERROR", 0]]
                 per_user[user_name] = [0, 0]
 
             else:
@@ -31,10 +25,8 @@ with open(file, 'r') as f:
             if user_name in per_user.keys():
                 ticket_type = reg_result[1]
                 if ticket_type == "INFO":
-                    # per_user[user_name][0][1] += 1
                     per_user[user_name][0] += 1
                 elif ticket_type == "ERROR":
-                    # per_user[user_name][1][1] += 1
                     per_user[user_name][1] += 1
                     error_type = reg_result[2]
                     if error_type not in error_d.keys():
@@ -44,39 +36,25 @@ with open(file, 'r') as f:
 
                 else:
                     pass
-
         else:
             pass
         user_name = ""
         ticket_type = ""
         error_type = ""
 
-print(per_user)
-error_list = []
-sorted_errors = []
-for error in error_d:
-    error_list.append([error_d[error], error])
-new_error_list = sorted(error_list, reverse=True)
-for error in new_error_list:
-    sorted_errors.append((error[1], error[0]))
-error_list_keys = ["Error", "Count"]
-sorted_errors_dict = dict(sorted_errors)
-print(sorted_errors_dict)
+error_csv_keys = ["Error", "Count"]
+sorted_errors_list = sorted(error_d.items(), key=operator.itemgetter(1), reverse=True)
+sorted_errors_list.insert(0, error_csv_keys)
+with open("error_message.csv", 'w', newline="") as error_message_csv:
+    writer = csv.writer(error_message_csv)
+    writer.writerows(sorted_errors_list)
 
-users_list = []
-for user in per_user:
-    users_list.append((user, str(per_user[user])))
-sorted_users_list = (sorted(users_list))
-user_list_keys = ["Username", "INFO", "ERROR"]
-sorted_users_dict = dict(sorted_users_list)
-print(sorted_users_dict)
-
-with open('user_statistics.csv', 'w') as user_stats:
-    writer = csv.DictWriter(user_stats, fieldnames=user_list_keys)
-    writer.writeheader()
-    writer.writerows(sorted_users_dict)
-
-with open('error_message.csv', 'w') as error_messages:
-    writer = csv.DictWriter(error_messages, fieldnames=error_list_keys)
-    writer.writeheader()
-    writer.writerows(sorted_errors_dict)
+user_list_csv_keys = ["Username", "INFO", "ERROR"]
+sorted_users_list = sorted(per_user.items(), key=operator.itemgetter(0))
+sorted_without_tuples_list = []
+for user in sorted_users_list:
+    sorted_without_tuples_list.append([user[0], user[1][0], user[1][1]])
+sorted_without_tuples_list.insert(0, user_list_csv_keys)
+with open("user_statistics.csv", 'w', newline="") as user_statistics_csv:
+    writer = csv.writer(user_statistics_csv)
+    writer.writerows(sorted_without_tuples_list)
