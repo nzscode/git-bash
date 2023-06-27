@@ -5,7 +5,7 @@ import csv
 
 per_user = {}
 error_d = {}
-file = "x_syslog.log"
+file = "../VersionControl/x_syslog.log"
 reg = r": ([\w]*) ([\w ']*)\[?(#[\d]*)?\]? \(([\w.]*)\)"
 
 user_name = ""
@@ -46,7 +46,7 @@ for error in error_d:
     error_list.append([error, error_d[error]])
 error_list.sort(key=operator.itemgetter(1), reverse=True)
 error_list.insert(0, error_csv_keys)
-with open("error_message.csv", 'w', newline="") as error_message_csv:
+with open("../VersionControl/error_message.csv", 'w', newline="") as error_message_csv:
     writer = csv.writer(error_message_csv)
     writer.writerows(error_list)
 
@@ -56,6 +56,6 @@ for user in per_user.keys():
     user_list.append([user, per_user[user][0], per_user[user][1]])
     user_list.sort(key=operator.itemgetter(0))
 user_list.insert(0, user_list_csv_keys)
-with open("user_statistics.csv", 'w', newline="") as user_statistics_csv:
+with open("../VersionControl/user_statistics.csv", 'w', newline="") as user_statistics_csv:
     writer = csv.writer(user_statistics_csv)
     writer.writerows(user_list)
