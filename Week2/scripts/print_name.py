@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def printName(name, age):
     print(f"My name is {name}, I am {age} years old.")
     if age < 13:
