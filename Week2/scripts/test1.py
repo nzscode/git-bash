@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-def hello(thing, age):
-    print(f"Hello {thing}. You are {age} years old.")
+def hello():
+    print("Hello")
 
-hello("World", 19)
+hello()
