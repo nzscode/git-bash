@@ -1,5 +1,0 @@
---- test1.py	2023-06-26 20:39:05.707379300 -0400
-+++ test2.py	2023-06-26 20:39:05.695385400 -0400
-@@ -1 +1 @@
--fruits = {"Apples": 5, "Banana": 2}
-+fruits = {"Tangerines": 12, "Bananas": [3, "yellow"]}

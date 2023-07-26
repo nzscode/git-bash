@@ -1,7 +1,0 @@
-No cantaloupe [#9] (rob),
-Yes apples [#45] (lola),
-No cantaloupe [#9] (tina),
-Yes dates [#3] (rob),
-No apples [#10] (tina),
-No pears [#8] (jane),
-
