@@ -9,6 +9,6 @@ elif age < 30 and age > 14:
   pet = Q_Pet
   print(f"Your ideal pet is a {pet}")
 else:
-  pet = "fish" 
+  pet = "fish"
   print(f"The pet for you is a {pet}")
 
