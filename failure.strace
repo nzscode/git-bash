@@ -1,23 +1,23 @@
---- Process 5064 created
---- Process 5064 loaded C:\Windows\System32\ntdll.dll at 00007ffdff390000
---- Process 5064 loaded C:\Windows\System32\kernel32.dll at 00007ffdfe6d0000
---- Process 5064 loaded C:\Windows\System32\KernelBase.dll at 00007ffdfcda0000
---- Process 5064 thread 19292 created
---- Process 5064 thread 18708 created
---- Process 5064 loaded C:\Windows\System32\ucrtbase.dll at 00007ffdfc770000
---- Process 5064 thread 14836 created
---- Process 5064 loaded C:\Users\nzsco\AppData\Local\Programs\Python\Python311\vcruntime140.dll at 00007ffdf0100000
---- Process 5064 loaded C:\Users\nzsco\AppData\Local\Programs\Python\Python311\python311.dll at 00007ffd7bd20000
---- Process 5064 loaded C:\Windows\System32\ws2_32.dll at 00007ffdfee30000
---- Process 5064 loaded C:\Windows\System32\version.dll at 00007ffdf58f0000
---- Process 5064 loaded C:\Windows\System32\rpcrt4.dll at 00007ffdfd3d0000
---- Process 5064 loaded C:\Windows\System32\msvcrt.dll at 00007ffdfef60000
---- Process 5064 loaded C:\Windows\System32\advapi32.dll at 00007ffdfeeb0000
---- Process 5064 loaded C:\Windows\System32\sechost.dll at 00007ffdfe190000
---- Process 5064 loaded C:\Windows\System32\bcrypt.dll at 00007ffdfc130000
---- Process 5064 loaded C:\Windows\System32\bcryptprimitives.dll at 00007ffdfca20000
---- Process 5064 loaded C:\Windows\System32\kernel.appcore.dll at 00007ffdfb8a0000
---- Process 5064 thread 14836 exited with status 0x0
---- Process 5064 thread 18708 exited with status 0x0
---- Process 5064 thread 19292 exited with status 0x0
---- Process 5064 exited with status 0x0
+--- Process 368 created
+--- Process 368 loaded C:\Windows\System32\ntdll.dll at 00007ffdff390000
+--- Process 368 loaded C:\Windows\System32\kernel32.dll at 00007ffdfe6d0000
+--- Process 368 loaded C:\Windows\System32\KernelBase.dll at 00007ffdfcda0000
+--- Process 368 thread 4180 created
+--- Process 368 thread 14824 created
+--- Process 368 loaded C:\Windows\System32\ucrtbase.dll at 00007ffdfc770000
+--- Process 368 thread 20772 created
+--- Process 368 loaded C:\Users\nzsco\AppData\Local\Programs\Python\Python311\vcruntime140.dll at 00007ffde7360000
+--- Process 368 loaded C:\Users\nzsco\AppData\Local\Programs\Python\Python311\python311.dll at 00007ffdb27a0000
+--- Process 368 loaded C:\Windows\System32\ws2_32.dll at 00007ffdfee30000
+--- Process 368 loaded C:\Windows\System32\version.dll at 00007ffdf58f0000
+--- Process 368 loaded C:\Windows\System32\rpcrt4.dll at 00007ffdfd3d0000
+--- Process 368 loaded C:\Windows\System32\msvcrt.dll at 00007ffdfef60000
+--- Process 368 loaded C:\Windows\System32\advapi32.dll at 00007ffdfeeb0000
+--- Process 368 loaded C:\Windows\System32\bcrypt.dll at 00007ffdfc130000
+--- Process 368 loaded C:\Windows\System32\sechost.dll at 00007ffdfe190000
+--- Process 368 loaded C:\Windows\System32\bcryptprimitives.dll at 00007ffdfca20000
+--- Process 368 loaded C:\Windows\System32\kernel.appcore.dll at 00007ffdfb8a0000
+--- Process 368 thread 14824 exited with status 0x0
+--- Process 368 thread 20772 exited with status 0x0
+--- Process 368 thread 4180 exited with status 0x0
+--- Process 368 exited with status 0x0
