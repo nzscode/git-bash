@@ -1,0 +1,7 @@
+[
+  {"id":1,"fruit":{"fruit_color":"red","fruit_name":"Cherry","fruit_quantity":3},"price":"2.00","total_sales":5},
+  {"id":2,"fruit":{"fruit_color":"orange","fruit_name":"Orange","fruit_quantity":1},"price":"4.50","total_sales":6},
+  {"id":3,"fruit":{"fruit_color":"red","fruit_name":"Strawberry","fruit_quantity":2},"price":"1.75","total_sales":30},
+  {"id":4,"fruit":{"fruit_color":"green","fruit_name":"HoneyDew","fruit_quantity":6},"price":"2.25","total_sales":5},
+  {"id":5,"fruit":{"fruit_color":"red","fruit_name":"Rambutang","fruit_quantity":8},"price":"3.00","total_sales":5}
+]
