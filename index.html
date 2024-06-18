@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Git Bash</title>
+    </head>
+    <body>
+        <!-- NAVIGATION MENU - SIDE OPEN -->
+        <header>
+            <div id="title-bar-backing"></div>
+            <h1 id="title-bar">
+                <span
+                    id="nav-hamburger"
+                    style="cursor: pointer"
+                    onclick="openNav()"
+                    >&#9776;</span
+                >
+                <span id="page-title">Git Bash</span>
+            </h1>
+            <div id="mySidenav" class="sidenav">
+                <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                >
+                <!-- Nav Menu Items -->
+                <nav id="nav"></nav>
+                <div class="space-block"></div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2 class="lvl2" id="">Level 2</h2>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <section>
+                        <h3 class="lvl3" id="">Level 3</h3>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <section>
+                            <h3 class="lvl4 h3-plus">Level 4</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                            <section>
+                                <h3 class="lvl5">Level 5</h3>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                </ul>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </main>
+        <br /><br /><br /><br />
+        <!-- Bottom Links -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column">
+                        <a href="./index.html">Homepage</a>
+                    </div>
+                </div>
+                <hr class="revert" />
+                <div class="row">
+                    <div class="footer-column">
+                        <h3 class="revert">1st Column Title</h3>
+                        <a href="./index.html">Main Page</a>
+                        <br /><a href="./index.html">Sub Title 1</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./nav-menu.js"></script>
+    </body>
+</html>
